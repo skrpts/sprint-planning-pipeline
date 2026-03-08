@@ -1,0 +1,40 @@
+# --- Identity ---
+name: "sprint-planning-pipeline"
+display_name: "Sprint Planning Pipeline"
+description: "End-to-end sprint planning from backlog to committed plan"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+# --- Attribution ---
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+
+licence: "MIT"
+repository: "https://github.com/skrpts/sprint-planning-pipeline"
+
+# --- Discovery (Hub) ---
+category: "project-manager"
+tags:
+  - "sprint"
+  - "planning"
+  - "agile"
+
+# --- Security & Access ---
+requires:
+  services:
+    - "anthropic-claude"
+    - "jira-cloud"
+  permissions: []
+  data_handling: []
+
+# --- Contents ---
+contents:
+  skills: 2
+  prompts: 4
+  workflows: 1
+  services: 0
+  sources: 1
+  documents: 1
+  assets: 1
+  total: 10
