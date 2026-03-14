@@ -23,7 +23,6 @@ tags:
 # --- Security & Access ---
 requires:
   services:
-    - "anthropic-claude"
     - "jira-cloud"
   permissions: []
   data_handling: []

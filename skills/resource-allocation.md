@@ -5,7 +5,7 @@ title: Resource Allocation
 description: "Optimises team assignments based on skills, availability, and priorities"
 tags: []
 connections:
-  - target: anthropic-claude
+  - target: llm-service
     type: runs_on
 ---
 

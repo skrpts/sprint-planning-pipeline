@@ -5,7 +5,7 @@ title: Sprint Planning
 description: "Breaks epics into sprintable user stories with acceptance criteria"
 tags: [Tested]
 connections:
-  - target: anthropic-claude
+  - target: llm-service
     type: runs_on
   - target: scrum-guide
     type: references
