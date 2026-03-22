@@ -3,7 +3,7 @@ type: document
 id: sprint-ceremony-playbook
 title: Sprint Ceremony Playbook
 description: "Guide for running effective sprint ceremonies"
-tags: []
+tags: [Production]
 connections: []
 ---
 

@@ -3,7 +3,7 @@ type: prompt
 id: allocate-resources
 title: Allocate Resources
 description: "Core prompt for optimising team member assignments"
-tags: []
+tags: [Production]
 connections:
   - target: resource-allocation
     type: derived_from
@@ -15,4 +15,4 @@ Produces balanced work assignments by matching team member skills and availabili
 
 ## Prompt
 
-You are a resource planning specialist. Given the team roster (with skills and availability) and the selected sprint backlog, produce optimal assignments. Balance workload evenly, match skills to tasks, flag any conflicts or over-allocations, and provide rationale for each assignment.
+You are a resource planning specialist. Using the sprint plan and capacity analysis from the previous stages, produce optimal assignments for each team member. Balance workload evenly, match skills to tasks, flag any conflicts or over-allocations, and provide rationale for each assignment.
