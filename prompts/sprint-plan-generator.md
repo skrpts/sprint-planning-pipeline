@@ -15,4 +15,9 @@ Generates a complete sprint plan document from backlog items and team velocity d
 
 ## Prompt
 
-Using the refined backlog from the previous stage and the team capacity analysis, select and organise items for the upcoming sprint. For each selected item, include the user story, acceptance criteria, story point estimate, and any dependencies. Produce a sprint goal statement and a summary of total committed points versus capacity.
+Using the refined backlog and team capacity analysis below, select and organise items for the upcoming sprint.
+
+- **Refined backlog:** {{steps.plan-sprint.output}}
+- **Team capacity:** {{steps.capacity-planner.output}}
+
+For each selected item, include the user story, acceptance criteria, story point estimate, and any dependencies. Produce a sprint goal statement and a summary of total committed points versus capacity.

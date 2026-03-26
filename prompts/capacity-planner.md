@@ -20,6 +20,6 @@ Calculate team capacity for the upcoming sprint.
 **Team roster:**
 {{input.team_roster}}
 
-**Sprint duration:** Using the sprint duration from Stage 1 (default: 2 weeks if not specified).
+**Sprint duration:** {{input.sprint_duration}} (default: 2 weeks if not specified)
 
 For each team member, account for planned leave, recurring meetings, and other commitments. Produce a capacity summary showing available hours per person, total team capacity in story points, and any risks to capacity.
