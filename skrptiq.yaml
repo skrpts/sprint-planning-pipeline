@@ -23,6 +23,7 @@ tags:
 # --- Security & Access ---
 requires:
   services:
+    - "llm-service"
     - "jira-cloud"
   permissions: []
   data_handling: []
