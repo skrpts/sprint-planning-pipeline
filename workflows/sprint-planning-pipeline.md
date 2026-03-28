@@ -17,6 +17,8 @@ connections:
     type: uses
   - target: capacity-planner
     type: uses
+  - target: llm-service
+    type: runs_on
 ---
 
 ## Overview
