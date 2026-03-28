@@ -1,4 +1,5 @@
 # --- Identity ---
+id: "2c5d50fe-16bb-474c-b5e0-a3704a35d3a8"
 name: "sprint-planning-pipeline"
 display_name: "Sprint Planning Pipeline"
 description: "End-to-end sprint planning from backlog to committed plan"
