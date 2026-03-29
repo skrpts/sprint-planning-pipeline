@@ -3,7 +3,7 @@ type: skill
 id: resource-allocation
 title: Resource Allocation
 description: "Optimises team assignments based on skills, availability, and priorities"
-tags: [Production, planning:sprint, planning:team]
+tags: [Production, Agile, Planning]
 connections:
   - target: llm-service
     type: runs_on

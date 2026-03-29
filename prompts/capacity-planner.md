@@ -3,7 +3,7 @@ type: prompt
 id: capacity-planner
 title: Capacity Planner
 description: "Task prompt for calculating team sprint capacity"
-tags: [Production, planning:sprint, planning:team, research:citations]
+tags: [Production, Agile, Citations, Planning]
 connections:
   - target: resource-allocation
     type: derived_from

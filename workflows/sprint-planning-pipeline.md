@@ -3,7 +3,7 @@ type: workflow
 id: sprint-planning-pipeline
 title: Sprint Planning Pipeline
 description: "End-to-end sprint planning from backlog to committed plan"
-tags: [Production, Tested, planning:sprint, planning:product]
+tags: [Production, Tested, Agile, Planning]
 connections:
   - target: sprint-planning
     type: uses

@@ -3,7 +3,7 @@ type: asset
 id: burndown-chart-template
 title: Burndown Chart Template
 description: "Template for tracking sprint progress against the ideal burndown"
-tags: [Production, planning:sprint, data:visualisation]
+tags: [Production, Agile, Planning]
 connections: []
 ---
 
