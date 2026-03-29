@@ -3,7 +3,7 @@ id: "2c5d50fe-16bb-474c-b5e0-a3704a35d3a8"
 name: "sprint-planning-pipeline"
 display_name: "Sprint Planning Pipeline"
 description: "End-to-end sprint planning from backlog to committed plan"
-version: "1.4.0"
+version: "1.0.0"
 engine: ">=1.0.0"
 
 # --- Attribution ---
@@ -31,11 +31,11 @@ requires:
 
 # --- Contents ---
 contents:
-  skills: 2
-  prompts: 4
+  skills: 3
+  prompts: 5
   workflows: 1
   services: 1
   sources: 1
   documents: 1
   assets: 1
-  total: 11
+  total: 13

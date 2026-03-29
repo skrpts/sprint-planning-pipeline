@@ -9,9 +9,13 @@ connections:
     type: uses
   - target: resource-allocation
     type: uses
+  - target: progress-tracking
+    type: uses
   - target: plan-sprint
     type: uses
   - target: allocate-resources
+    type: uses
+  - target: track-progress
     type: uses
   - target: sprint-plan-generator
     type: uses
