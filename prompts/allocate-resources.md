@@ -3,7 +3,7 @@ type: prompt
 id: allocate-resources
 title: Allocate Resources
 description: "Core prompt for optimising team member assignments"
-tags: [Production]
+tags: [Production, planning:sprint, planning:team]
 connections:
   - target: resource-allocation
     type: derived_from

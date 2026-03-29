@@ -3,7 +3,7 @@ type: prompt
 id: sprint-plan-generator
 title: Sprint Plan Generator
 description: "Task prompt for generating a structured sprint plan"
-tags: [Production]
+tags: [Production, planning:sprint, planning:team]
 connections:
   - target: sprint-planning
     type: derived_from

@@ -3,7 +3,7 @@ type: skill
 id: sprint-planning
 title: Sprint Planning
 description: "Breaks epics into sprintable user stories with acceptance criteria"
-tags: [Tested]
+tags: [Tested, planning:sprint, writing:product, quality:testing]
 connections:
   - target: llm-service
     type: runs_on

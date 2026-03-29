@@ -3,7 +3,7 @@ type: source
 id: scrum-guide
 title: Scrum Guide
 description: "Reference material for Scrum framework practices and ceremonies"
-tags: [Production]
+tags: [Production, planning:sprint, planning:team]
 connections: []
 ---
 

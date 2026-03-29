@@ -3,7 +3,7 @@ type: prompt
 id: track-progress
 title: Track Progress
 description: "Core prompt for analysing project progress data"
-tags: [Production]
+tags: [Production, planning:sprint, communication:status]
 connections:
   - target: progress-tracking
     type: derived_from

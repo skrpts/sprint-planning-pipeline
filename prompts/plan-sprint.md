@@ -3,7 +3,7 @@ type: prompt
 id: plan-sprint
 title: Plan Sprint
 description: "Core prompt for sprint planning and backlog prioritisation"
-tags: [Production]
+tags: [Production, planning:sprint, planning:product]
 connections:
   - target: sprint-planning
     type: derived_from
