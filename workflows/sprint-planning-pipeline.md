@@ -23,6 +23,12 @@ connections:
     type: uses
   - target: llm-service
     type: runs_on
+  - target: risk-assessment
+    type: uses
+  - target: sprint-ceremony-playbook
+    type: references
+  - target: burndown-chart-template
+    type: references
 ---
 
 ## Overview
