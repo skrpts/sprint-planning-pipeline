@@ -11,16 +11,6 @@ connections:
     type: uses
   - target: progress-tracking
     type: uses
-  - target: plan-sprint
-    type: uses
-  - target: allocate-resources
-    type: uses
-  - target: track-progress
-    type: uses
-  - target: sprint-plan-generator
-    type: uses
-  - target: capacity-planner
-    type: uses
   - target: llm-service
     type: runs_on
   - target: risk-assessment
