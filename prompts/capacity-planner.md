@@ -4,6 +4,19 @@ id: capacity-planner
 title: Capacity Planner
 description: "Task prompt for calculating team sprint capacity"
 tags: [Production, Agile, Citations, Planning]
+inputs:
+  team_roster:
+    label: "Team Roster"
+    description: "Full team roster with roles and availability"
+    example: "[List team members, roles, and hours available]"
+    required: true
+    type: text
+  sprint_duration:
+    label: "Sprint Duration"
+    description: "How long the sprint runs"
+    example: "2 weeks"
+    required: true
+    type: text
 connections:
   - target: resource-allocation
     type: derived_from

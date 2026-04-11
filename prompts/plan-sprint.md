@@ -4,6 +4,19 @@ id: plan-sprint
 title: Plan Sprint
 description: "Core prompt for sprint planning and backlog prioritisation"
 tags: [Production, Agile, Optimisation]
+inputs:
+  backlog_items:
+    label: "Backlog Items"
+    description: "The list of backlog items to prioritise"
+    example: "[Paste backlog items — title, description, and any existing scores]"
+    required: true
+    type: text
+  sprint_duration:
+    label: "Sprint Duration"
+    description: "How long the sprint runs"
+    example: "2 weeks"
+    required: true
+    type: text
 connections:
   - target: sprint-planning
     type: derived_from
