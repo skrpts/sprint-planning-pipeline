@@ -21,11 +21,15 @@ connections:
     type: references
 execution:
   - skill: "sprint-planning"
+    step_type: "generation"
   - skill: "resource-allocation"
+    step_type: "synthesis"
     input_from: "sprint-planning"
   - skill: "progress-tracking"
+    step_type: "synthesis"
     input_from: "resource-allocation"
   - skill: "risk-assessment"
+    step_type: "review"
     input_from: "progress-tracking"
 ---
 
