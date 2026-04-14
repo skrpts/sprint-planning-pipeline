@@ -19,6 +19,12 @@ connections:
     type: references
   - target: burndown-chart-template
     type: references
+output_step: "progress-tracking"
+composite_steps:
+  - "sprint-planning"
+  - "resource-allocation"
+  - "progress-tracking"
+  - "risk-assessment"
 execution:
   - skill: "sprint-planning"
     step_type: "generation"
