@@ -34,6 +34,8 @@ execution:
     step_type: "synthesis"
   - skill: "risk-assessment"
     step_type: "review"
+    context:
+      initiative_context: ""
 ---
 
 ## Overview
