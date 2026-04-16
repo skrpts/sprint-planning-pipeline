@@ -11,6 +11,8 @@ connections:
     type: uses
   - target: progress-tracking
     type: uses
+  - target: language-polish
+    type: uses
   - target: llm-service
     type: runs_on
   - target: risk-assessment
@@ -19,7 +21,7 @@ connections:
     type: references
   - target: burndown-chart-template
     type: references
-output_step: "progress-tracking"
+output_step: "language-polish"
 composite_steps:
   - "sprint-planning"
   - "resource-allocation"
@@ -36,6 +38,8 @@ execution:
     step_type: "review"
     context:
       initiative_context: ""
+  - skill: "language-polish"
+    step_type: "content"
 ---
 
 ## Overview
