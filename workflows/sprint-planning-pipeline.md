@@ -30,8 +30,10 @@ composite_steps:
 execution:
   - skill: "sprint-planning"
     step_type: "generation"
+    prompt: "plan-sprint"
   - skill: "resource-allocation"
     step_type: "synthesis"
+    prompt: "allocate-resources"
   - skill: "progress-tracking"
     step_type: "synthesis"
   - skill: "risk-assessment"
