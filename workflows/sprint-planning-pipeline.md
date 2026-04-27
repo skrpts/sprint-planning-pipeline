@@ -35,12 +35,15 @@ execution:
     step_type: "synthesis"
     prompt: "allocate-resources"
   - skill: "progress-tracking"
+    prompt: "track-progress"
     step_type: "synthesis"
   - skill: "risk-assessment"
+    prompt: "assess-risks"
     step_type: "review"
     context:
       initiative_context: ""
   - skill: "language-polish"
+    prompt: "polish-language"
     step_type: "content"
 ---
 
