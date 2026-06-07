@@ -17,7 +17,7 @@ connections:
     type: runs_on
   - target: risk-assessment
     type: uses
-  - target: sprint-ceremony-playbook
+  - target: planning-playbook
     type: references
   - target: burndown-chart-template
     type: references
