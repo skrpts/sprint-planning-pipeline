@@ -31,15 +31,23 @@ execution:
   - skill: "sprint-planning"
     step_type: "generation"
     prompt: "plan-sprint"
+    output: { name: "sprint_plan", type: "text" }
   - skill: "resource-allocation"
     step_type: "synthesis"
     prompt: "allocate-resources"
+    output: { name: "resource_allocation", type: "text" }
+    bindings:
+      sprint_plan:
+        from_step: "Sprint Planning"
+        field: output
   - skill: "progress-tracking"
     prompt: "track-progress"
     step_type: "synthesis"
+    output: { name: "progress", type: "text" }
   - skill: "risk-assessment"
     prompt: "assess-risks"
     step_type: "review"
+    output: { name: "risk_assessment", type: "text" }
     context:
       initiative_context: "No additional initiative context"
   - skill: "language-polish"

@@ -3,7 +3,7 @@ id: "2c5d50fe-16bb-474c-b5e0-a3704a35d3a8"
 name: "sprint-planning-pipeline"
 display_name: "Sprint Planning Pipeline"
 description: "End-to-end sprint planning from backlog to committed plan"
-version: "1.1.25"
+version: "1.1.27"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -25,8 +25,8 @@ tags:
 dependencies:
   - id: "0a6f89e5-1da9-4760-9ad3-869638b3856e"
     name: "allocate-resources"
-    version: 1.0.1
-    checksum: "sha256:ba24f9ef535a6015af21f248014dfa3bfe596926d9f46f4d6616e129a64fbe94"
+    version: 1.0.3
+    checksum: "sha256:25e616464701c6195a756b3cdf0fa3a3b6120795614501765afcf72c954b6f42"
   - id: "6554a264-d20e-4132-b3b6-3959f81c004b"
     name: "assess-risks"
     version: 1.0.2
@@ -85,3 +85,17 @@ contents:
   documents: 0
   assets: 0
   total: 6
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-03T11:09:52.475Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: []
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/sprint-planning-pipeline/security"

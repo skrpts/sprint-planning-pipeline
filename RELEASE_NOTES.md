@@ -1,5 +1,11 @@
 # Release Notes
 
+## v1.1.27
+GH#753 — supply allocate-resources via `bindings: sprint_plan { from_step: "Sprint Planning" }` and re-pin the dep to v1.0.3 (position-safe). Restores the resolved reference after the shared-prompt fix; no behaviour change. Canonical scan clean.
+
+## v1.1.26
+GH#745 — declare per-step `output: {name, type}` on every execution step (sprint_plan/text, resource_allocation/text, progress/text, risk_assessment/text, polished_plan/text). Lights up the #744 rich flow-map. Content-only; no bindings or logic changes.
+
 ## v1.1.25
 GH#645 Row 3b — migrate to K-037 dep-referenced schema. Strip 11 inline shared-content files and declare 11 hub-shared deps (UUID id + slug name + version + checksum from `gen-dep-checksums.mjs`). Internal slug references rewritten for E2 rename/mirror-drop pair(s): sprint-ceremony-playbook→planning-playbook. Closes pre-Step-3 inline-vendoring for this bundle.
 
