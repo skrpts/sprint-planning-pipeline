@@ -15,7 +15,7 @@ Generates a complete sprint plan document from backlog items and team velocity d
 
 ## Prompt
 
-Using the refined backlog and team capacity analysis below, select and organise items for the upcoming sprint.
+Using the refined backlog and team capacity analysis below, select and organize items for the upcoming sprint.
 
 - **Refined backlog:** {{steps.previous.output}}
 - **Team capacity:** {{steps.Resource Allocation.output}}

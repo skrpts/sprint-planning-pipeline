@@ -117,7 +117,7 @@ Teams inflate estimates to create a safety buffer. This erodes trust, makes velo
 Silently rolling unfinished items into the next sprint avoids the uncomfortable conversation about why they were not completed. Always discuss carry-overs in the retrospective. Was the estimate wrong? Was scope unclear? Were there blockers? Each carry-over is a learning opportunity.
 
 ### Treating the Sprint Goal as Optional
-The sprint goal exists to give the team focus and a basis for trade-off decisions during the sprint. If the team regularly ignores it or treats it as a formality, sprint planning loses its strategic value. The sprint goal should influence which items are selected and how the team prioritises when things go sideways.
+The sprint goal exists to give the team focus and a basis for trade-off decisions during the sprint. If the team regularly ignores it or treats it as a formality, sprint planning loses its strategic value. The sprint goal should influence which items are selected and how the team prioritizes when things go sideways.
 
 ### Skipping Retrospective Actions
 Running a retrospective without following through on improvement actions is worse than not running one at all — it teaches the team that raising problems is pointless. Limit retrospective actions to 1–2 concrete, achievable improvements. Track them visibly. Review progress at the next retrospective.

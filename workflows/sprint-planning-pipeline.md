@@ -74,7 +74,7 @@ Invoke the **capacity-planner** prompt to calculate available team capacity for 
 
 ### Stage 3: Sprint Plan Generation
 
-Invoke the **sprint-plan-generator** prompt to select and organise backlog items that fit within the team's capacity, respecting dependencies and priorities.
+Invoke the **sprint-plan-generator** prompt to select and organize backlog items that fit within the team's capacity, respecting dependencies and priorities.
 
 ### Stage 4: Resource Allocation
 
@@ -86,7 +86,7 @@ A committed sprint plan containing:
 
 - Selected user stories with acceptance criteria and story points
 - Team member assignments with rationale
-- Capacity utilisation summary
+- Capacity utilization summary
 - Dependency map and risk flags
 
 ## Inputs
@@ -101,7 +101,7 @@ A committed sprint plan containing:
 
 | Name | Description |
 |------|-------------|
-| Sprint plan | Selected user stories with assignments, capacity utilisation, and dependency map |
+| Sprint plan | Selected user stories with assignments, capacity utilization, and dependency map |
 
 ## Setup
 
