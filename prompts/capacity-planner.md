@@ -17,6 +17,12 @@ inputs:
     example: "2 weeks"
     required: true
     type: text
+context_params:
+  refined_backlog:
+    label: "Refined Backlog"
+    description: "The refined, sprintable backlog — used to size capacity risk against the planned scope."
+    required: false
+    default_from_previous: true
 connections:
   - target: resource-allocation
     type: derived_from
@@ -35,4 +41,6 @@ Calculate team capacity for the upcoming sprint.
 
 **Sprint duration:** {{input.sprint_duration}} (default: 2 weeks if not specified)
 
-For each team member, account for planned leave, recurring meetings, and other commitments. Produce a capacity summary showing available hours per person, total team capacity in story points, and any risks to capacity.
+**Refined backlog (planned scope):** {{step.context.refined_backlog}}
+
+For each team member, account for planned leave, recurring meetings, and other commitments. Produce a capacity summary showing available hours per person, total team capacity in story points, and any risks to capacity — including whether available capacity is sufficient for the refined backlog's scope.

@@ -7,9 +7,13 @@ tags: [Production, Tested, Agile, Planning]
 connections:
   - target: sprint-planning
     type: uses
+  - target: capacity-planning
+    type: uses
   - target: resource-allocation
     type: uses
   - target: progress-tracking
+    type: uses
+  - target: sprint-plan-generation
     type: uses
   - target: language-polish
     type: uses
@@ -24,14 +28,24 @@ connections:
 output_step: "language-polish"
 composite_steps:
   - "sprint-planning"
+  - "capacity-planning"
   - "resource-allocation"
   - "progress-tracking"
   - "risk-assessment"
+  - "sprint-plan-generation"
 execution:
   - skill: "sprint-planning"
     step_type: "generation"
     prompt: "plan-sprint"
     output: { name: "sprint_plan", type: "text" }
+  - skill: "capacity-planning"
+    step_type: "synthesis"
+    prompt: "capacity-planner"
+    output: { name: "capacity_plan", type: "text" }
+    bindings:
+      refined_backlog:
+        from_step: "Sprint Planning"
+        field: output
   - skill: "resource-allocation"
     step_type: "synthesis"
     prompt: "allocate-resources"
@@ -50,12 +64,33 @@ execution:
     output: { name: "risk_assessment", type: "text" }
     context:
       initiative_context: "No additional initiative context"
+  - skill: "sprint-plan-generation"
+    prompt: "sprint-plan-generator"
+    step_type: "synthesis"
+    output: { name: "committed_sprint_plan", type: "text" }
+    bindings:
+      refined_backlog:
+        from_step: "Sprint Planning"
+        field: output
+      team_capacity:
+        from_step: "Capacity Planner"
+        field: output
+      resource_allocation:
+        from_step: "Resource Allocation"
+        field: output
+      risk_assessment:
+        from_step: "Risk Assessment"
+        field: output
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
+    bindings:
+      source:
+        from_step: "Sprint Plan Generator"
+        field: output
 ---
 
 ## Overview
@@ -72,13 +107,17 @@ Invoke the **sprint-planning** skill to break down epics and feature requests in
 
 Invoke the **capacity-planner** prompt to calculate available team capacity for the upcoming sprint, accounting for holidays, meetings, and other commitments.
 
-### Stage 3: Sprint Plan Generation
-
-Invoke the **sprint-plan-generator** prompt to select and organize backlog items that fit within the team's capacity, respecting dependencies and priorities.
-
-### Stage 4: Resource Allocation
+### Stage 3: Resource Allocation
 
 Invoke the **resource-allocation** skill to assign stories to team members based on skills, availability, and workload balance.
+
+### Stage 4: Progress Tracking & Risk Assessment
+
+Set up progress tracking and assess the risks that could threaten the commitment before the plan is finalised.
+
+### Stage 5: Sprint Plan Generation
+
+Invoke the **sprint-plan-generator** prompt to assemble the committed sprint plan — selecting and organising backlog items that fit within the team's capacity, reconciling against the resource allocation, respecting dependencies and priorities, and accounting for the flagged risks. This produces the workflow's deliverable, which the final stage polishes.
 
 ## Output
 
