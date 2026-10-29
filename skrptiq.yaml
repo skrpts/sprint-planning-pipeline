@@ -3,7 +3,7 @@ id: "2c5d50fe-16bb-474c-b5e0-a3704a35d3a8"
 name: "sprint-planning-pipeline"
 display_name: "Sprint Planning Pipeline"
 description: "End-to-end sprint planning from backlog to committed plan"
-version: "1.1.29"
+version: "1.1.30"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -25,12 +25,12 @@ tags:
 dependencies:
   - id: "0a6f89e5-1da9-4760-9ad3-869638b3856e"
     name: "allocate-resources"
-    version: 1.0.4
-    checksum: "sha256:0832d514c1e262f0463ca7319b9c023109e5c5d43da9dc3cd5d395dfe288c9f6"
+    version: 1.0.5
+    checksum: "sha256:eb21b13837ea490111b5dcacc418921042e1cbe289d28ee74f0f4a052d95970a"
   - id: "6554a264-d20e-4132-b3b6-3959f81c004b"
     name: "assess-risks"
-    version: 1.0.4
-    checksum: "sha256:013c046f72fda94700eab8f25d8c256f10295ba689beaf88b88aa2b796a9ca14"
+    version: 1.0.5
+    checksum: "sha256:08f4deeeff24ebfb69599595b129514383527b663e36b7a7a5f04a8cfad41fa6"
   - id: "c2895a43-e500-479f-a1d8-90ce0f76c0b7"
     name: "burndown-chart-template"
     version: 1.0.1
@@ -65,8 +65,8 @@ dependencies:
     checksum: "sha256:8131b83b6497727547c4dfa6dce7386373dcb7221317b32c87e406a40c47b1c8"
   - id: "e39714a7-bcf4-4191-8bfc-d0608c3d5fbc"
     name: "track-progress"
-    version: 1.0.3
-    checksum: "sha256:6f132897d50d64faead8a888806a4321f70a0af080501dd56c93f5487118197d"
+    version: 1.0.4
+    checksum: "sha256:01c560c95626587b47bbfb6b0bcb8a129094293581bddca75569d937027bd26d"
 
 requires:
   services:
@@ -88,7 +88,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-07-18T15:58:19.708Z"
+  scanned_at: "2026-10-29T11:56:00.411Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"

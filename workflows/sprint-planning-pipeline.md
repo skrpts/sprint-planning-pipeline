@@ -51,6 +51,9 @@ execution:
     prompt: "allocate-resources"
     output: { name: "resource_allocation", type: "text" }
     bindings:
+      source:
+        from_step: "Capacity Planner"
+        field: output
       sprint_plan:
         from_step: "Sprint Planning"
         field: output
@@ -58,12 +61,20 @@ execution:
     prompt: "track-progress"
     step_type: "synthesis"
     output: { name: "progress", type: "text" }
+    bindings:
+      source:
+        from_step: "Resource Allocation"
+        field: output
   - skill: "risk-assessment"
     prompt: "assess-risks"
     step_type: "review"
     output: { name: "risk_assessment", type: "text" }
     context:
       initiative_context: "No additional initiative context"
+    bindings:
+      source:
+        from_step: "Sprint Planning"
+        field: output
   - skill: "sprint-plan-generation"
     prompt: "sprint-plan-generator"
     step_type: "synthesis"
