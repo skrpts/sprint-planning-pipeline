@@ -22,7 +22,6 @@ context_params:
     label: "Refined Backlog"
     description: "The refined, sprintable backlog — used to size capacity risk against the planned scope."
     required: false
-    default_from_previous: true
 connections:
   - target: resource-allocation
     type: derived_from

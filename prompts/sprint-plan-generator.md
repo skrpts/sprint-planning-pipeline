@@ -21,7 +21,6 @@ context_params:
     label: "Risk Assessment"
     description: "Identified risks that could threaten the sprint commitment."
     required: false
-    default_from_previous: true
 connections:
   - target: sprint-planning
     type: derived_from
